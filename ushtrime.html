@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Ushtrime lidhur me formen e thirrjes se ngjyrave HTML</title>
+    <style>
+        #a{
+            background-color: lightcyan;
+            color: black;
+        }
+        .b{
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <p>ushtrime per formen e ngjyrave ne HTML</p>
+      <h2 style=" background-color: rgb(120,90,211) ">rgb(120,90,211 )"</h2>
+    <h2 style="background-color: #ff2112;">#ff2112;  </h2>
+    <h2 style="background-color: hsl(231, 24%, 50%);">hsl(231, 24%, 50%);</h2>
+    <h2 style=" background-color: rgb(120,90,211,0.2) ">rgb(120,90,211,0.2 )"</h2>
+    <h2 style="background-color: hsl(231, 24%, 50%, 0.4);">hsl(231, 24%, 50%, 0.4);</h2>
+
+    <p>regjistrimi i studenteve ne klase</p>
+    <fieldset id="a">
+    <form method="get">
+        <table>
+            <tr>
+                <td>
+                    <label for="txtIDStudenti">ID e studentit:</label>
+                </td>
+                <td><input type="number" id="txtIDStudenti" min="0" max="100" name="" id=""></td>
+            </tr>
+            <tr>
+                <td><label for="txtFakulteti">Fakulteti:</label></td>
+                <td><select id="txtFakulteti">
+                    <option >FIEK</option>
+                    <option >FIM</option>
+                    <option >FE</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label id="rbGjinia">Gjinia:</label></td>
+                <td><input type="radio" name="rbGjinia" value="M">
+                <input type="radio" name="rbGjinia" value="F">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="Ruaj">
+                    <input type="submit" value="Fshi">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </fieldset>
+    <a href="#a">lart</a>
+    </div>
+</body>
+</html>
